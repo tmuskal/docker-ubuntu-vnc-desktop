@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.2
+FROM ubuntu:15.04
 MAINTAINER Doro Wu <fcwu.tw@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -14,7 +14,7 @@ RUN apt-get update \
         fonts-wqy-microhei \
         language-pack-zh-hant language-pack-gnome-zh-hant firefox-locale-zh-hant libreoffice-l10n-zh-tw \
         nginx \
-        python-pip python-dev build-essential \
+        python-pip python-dev build-essential xterm gnuplot \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
